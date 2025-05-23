@@ -12,7 +12,7 @@ class HammingCode:
         codeword = ham.encode([1,0,1,1])
         decoded, corrected = ham.decode(codeword_with_error)
 
-    For industrial integration, import HammingCode and call encode()/decode().
+    For integration, import HammingCode and call encode()/decode().
     """
     def __init__(self, r: int):
         self.r = r
@@ -105,7 +105,7 @@ class HammingCode:
             plt.show()
 
 
-# Example CLI for industrial usage
+# Example CLI for integration
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description='Hamming Code encoder/decoder')
